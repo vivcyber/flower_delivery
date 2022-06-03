@@ -43,35 +43,78 @@ if($totalRows>0){
     }
 </style>
 
-<div class="container">
 
-<div class="productcard" id="productcard">
 
-</div>
+
+   <div class="container">
+
+
+
+
+
+
+
    
-<div class="row">
+       <div class="main p-5 m-5 card">
+           <?php $od=0;foreach($rows as $r):
+              if($od!=$r['order_sid']){
+                echo "
+                <div class="."py-5".">
+                <table class="."w-100 ".">
+                <tbody>
+                  <tr>
+                     <td>訂購日期：".$r['order_date']."</td>
+                     <td class="."text-end "."><h5 class="."text-danger".">總金額：NT".$r['amount']."</h5></td>
+                  </tr>
+                </tbody>
+                </table>
+           
+           
+                ";
+              $od=$r['order_sid'];
+            };
+              echo "
+              <div class="."card".">
+              <table>
+              <tbody>
+                <tr>
+                   <th scope="."row"."></th>
+                   <td><img src="."imgs/small/".$r['book_id'].".jpg"." class="."card-img"." style="."width:100px;"."></td>
+                   <td>".$r['bookname']."</td>
+                   <td>NT".$r['price']."</td>
+                </tr>
+              </tbody>
+              </table>
+              </div>
+           
+           
+           
+              ";
+           
+             endforeach; ?>
+           
+           
+           
+           
+              </div>
+       </div>
+
+   </div>
+
+
+  
 
 
 
 
-</div>
-<?php $od=0;foreach($rows as $r): 
-      if($od!=$r['order_sid']){
-        echo  "<h2>".$r['amount']."</h2>";
-      echo $r['amount'];
 
-      $od=$r['order_sid'];
-    };
-      echo  "<h2>".$r['bookname']."</h2>";
-      echo  "<h5>".$r['price']."</h5>";
-      
-endforeach; ?>
+
+
            
 
 
-</div>
 
-</div>
+
 
 
 <?php include __DIR__ . '/parts/footer.php'; ?>
