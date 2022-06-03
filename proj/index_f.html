@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flowershop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+
+    <style>
+        
+        .part1 {
+            background: url(./imgs/bg/pexels-irina-iriser-1158961.jpg);
+            background-size: cover;
+            min-height:100vh;
+            padding: 24px;
+        }
+
+        .card {
+            width: 50%;
+            padding: 48px;
+            background-color: rgba(255, 255, 255, 0.2);
+            opacity: 100;
+           
+
+
+        }
+
+        .mybtn {
+            background-color: white;
+            color: black;
+            border: none;
+        }
+
+        .mybtn:hover {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+
+        }
+
+        .part2 {
+            background: url(./images/pexels-karolina-grabowska-5706058.jpg);
+            background-size: cover;
+            padding: 24px;
+            min-height:100vh;
+            padding: 24px;
+        }
+
+        .part3 {
+            background: url(./images/pexels-natasha-fernandez-1067560.jpg);
+            background-size: cover;
+            min-height:100vh;
+            padding: 24px;
+            
+        }
+
+        .part4 {
+            background: url(./images/pexels-karolina-grabowska-6920358.jpg);
+            background-size: cover;
+            min-height:100vh;
+            padding: 24px;
+            
+        }
+
+        .card2 {
+            background-color: black;
+            width: 80%;
+            padding: 48px;
+            color: white;
+        }
+
+        .banner {
+            background: url(./images/pexels-monicore-136255.jpg);
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .mynavbtn {
+            color: white;
+            font-size: 20px;
+            margin-left: 24px;
+            font-weight: 300;
+            font-family: sans-serif;
+            transition: 1s ease;
+        }
+
+        .mynavbtn:hover {
+            color: white;
+            text-decoration: underline;
+            letter-spacing: 12px;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.418);
+            padding-top: 12px;
+            padding-bottom: 12px;
+            z-index: 999;
+
+
+        }
+        a{
+            text-align: center;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        h1{
+            transition: .5s ease;
+        }
+        .card:hover h1{
+            letter-spacing: 4px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="banner container-fliud" id="home">
+
+        <nav class="w-100">
+            <div class="container  ">
+                <a href="#home" class="mynavbtn">Home</a>
+                <a href="#visit" class="mynavbtn">Visit</a>
+                <a href="#plants" class="mynavbtn">Plants</a>
+                <a href="#Customised" class="mynavbtn">Customised</a>
+                <a href="#cafe" class="mynavbtn">Cafe</a>
+            </div>
+        </nav>
+
+    </div>
+    <div id="visit" class=" part1 container-fliud d-flex  align-items-center ">
+        <div class="container ">
+            <div class="left-in card ">
+                <h1>Flower Season</h1>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident dolore harum optio, odio soluta,
+                    a libero et ex, rerum quia quibusdam ipsa aut dolorem mollitia delectus eveniet sit animi? Earum.
+                </p>
+                <br>
+
+                <button class="mybtn p-3">View More</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="plants" class="grid part2 container-fliud d-flex  align-items-center ">
+        <div class="container justify-content-end  ">
+            <div class="row justify-content-end">
+                <div class="right-in card reveal ">
+                    <h1>Potted Plants</h1>
+                    <br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident dolore harum optio, odio
+                        soluta,
+                        a libero et ex, rerum quia quibusdam ipsa aut dolorem mollitia delectus eveniet sit animi?
+                        Earum.
+                    </p>
+                    <br>
+                    <button class="mybtn p-3">View More</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="Customised" class=" part3 container-fliud d-flex  align-items-center ">
+        <div class="container ">
+            <div class="left-in card ">
+                <h1>Flower for Parties</h1>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident dolore harum optio, odio soluta,
+                    a libero et ex, rerum quia quibusdam ipsa aut dolorem mollitia delectus eveniet sit animi? Earum.
+                </p>
+                <br>
+
+                <button class="mybtn p-3">View More</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="cafe" class="grid part4 container-fliud d-flex  align-items-center ">
+        <div class="container d-flex  align-items-center justify-content-center ">
+            <div class="buttom-in card2 m-0 justify-content-center reveal ">
+                <h1>Having Here</h1>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident dolore harum optio, odio soluta,
+                    a libero et ex, rerum quia quibusdam ipsa aut dolorem mollitia delectus eveniet sit animi? Earum.
+                </p>
+                <br>
+
+                <button class="btn btn-outline-light p-3">View More</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.6/scrollreveal.min.js"></script>
+      
+
+    <script>
+		window.sr = ScrollReveal()
+
+		sr.reveal(".left-in",{
+            origin: "left",  
+			distance: "200px",  
+			duration: 1000,  
+			opacity: 0, 
+			easing: "cubic-bezier(0.6, 0.2, 0.1, 1)",
+			mobile: true, 
+			reset: true, 
+			useDelay: "always",
+			viewFactor: 0.2, 
+		
+            
+
+            })
+        sr.reveal(".right-in",{
+            origin: "right",  
+			distance: "200px",  
+			duration: 1000,  
+			opacity: 0, 
+			easing: "cubic-bezier(0.6, 0.2, 0.1, 1)",
+			mobile: true, 
+			reset: true, 
+			useDelay: "always",
+			viewFactor: 0.2, 
+           
+
+            })
+            sr.reveal(".buttom-in",{
+            origin: "bottom",  
+			distance: "200px",  
+			duration: 1000,  
+			opacity: 0, 
+			easing: "cubic-bezier(0.6, 0.2, 0.1, 1)",
+			mobile: true, 
+			reset: true, 
+			useDelay: "always",
+			viewFactor: 0.2, 
+           
+
+            })
+	</script>
+   
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+        
+</body>
+
+</html>
