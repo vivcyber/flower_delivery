@@ -53,10 +53,23 @@ unset($_SESSION['cart']); // 清除購物車內容
 ?>
 <?php include __DIR__ . '/parts/html-head.php'; ?>
 <?php include __DIR__ . '/parts/navbar.php'; ?>
+<style>
+        body{
+        background: url(./imgs/bg/pexels-karolina-grabowska-7291602.jpg);
+        background-size: cover;
+    }
+    </style>
 
 <div class="container">
-    <div class="alert alert-success" role="alert">
-        感謝訂購 <?= $order_sid ?>
+
+    <div class="main d-flex justify-content-center w-100">
+        <div class="card col-6 m-5 p-5 text-center">
+            <h4 class="mt-5 text-center">✧✧✧定購完成✧✧✧ </h4>
+            <h5 class="mt-3 text-center">您的訂單編號為</h5>
+            <h1 class="fs-1 text-success text-center mb-5"><?= $order_sid ?></h1>
+            <a href="order_detail.php" class=" m-2 mt-5 btn btn-primary">查看訂購紀錄</a>
+            <a href="index_.php" class="m-2 btn btn-outline-primary">回到首頁</a>
+        </div>
     </div>
 
 </div>

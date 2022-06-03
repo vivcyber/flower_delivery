@@ -26,7 +26,7 @@ $userid=$_SESSION['loginUser']['id'];
 // echo $userid;
 // 如果有資料
 if($totalRows>0){
-    $sql = sprintf("SELECT * FROM orders o join order_details od on o.sid = od.order_sid join products p on od.product_sid = p.sid join members m on o.member_sid = m.id WHERE m.id=$userid ORDER BY `od`.`order_sid` ASC");
+    $sql = sprintf("SELECT * FROM orders o join order_details od on o.sid = od.order_sid join products p on od.product_sid = p.sid join members m on o.member_sid = m.id WHERE m.id=$userid ORDER BY `od`.`order_sid` DESC");
     $stmt = $pdo->query($sql);
     $rows = $stmt->fetchAll();
 }
@@ -63,6 +63,7 @@ if($totalRows>0){
                 <table class="."w-100 ".">
                 <tbody>
                   <tr>
+                     <td>訂單編號：".$r['order_sid']."</td>
                      <td>訂購日期：".$r['order_date']."</td>
                      <td class="."text-end "."><h5 class="."text-danger".">總金額：NT".$r['amount']."</h5></td>
                   </tr>
