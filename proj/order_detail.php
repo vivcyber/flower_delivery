@@ -59,7 +59,7 @@ if($totalRows>0){
            <?php $od=0;foreach($rows as $r):
               if($od!=$r['order_sid']){
                 echo "
-                <div class="."py-5".">
+                <div class="."pt-5".">
                 <table class="."w-100 ".">
                 <tbody>
                   <tr>
@@ -68,8 +68,8 @@ if($totalRows>0){
                   </tr>
                 </tbody>
                 </table>
-           
-           
+                </div>
+              
                 ";
               $od=$r['order_sid'];
             };
@@ -100,6 +100,8 @@ if($totalRows>0){
        </div>
 
    </div>
+
+
 
 
   
@@ -171,4 +173,3 @@ if($totalRows>0){
 
 
 
-SELECT * FROM orders o join order_details od on o.sid = od.order_sid join products p on od.product_sid = p.sid join members m on o.member_sid = m.id WHERE m.id=4;

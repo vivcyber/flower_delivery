@@ -18,7 +18,8 @@ if(! isset($page_name)){
                 </li>
                 <li class="nav-item <?= $page_name=='data-insert' ? 'active' : '' ?>">
                     <a class="nav-link" href="cart-list.php">Shopping Cart
-                        <span class="badge badge-pill badge-danger cart-count"></span></a>
+                        <span class="badge bg-danger cart-count"></span></a>
+                        <!-- <span class="badge badge-pill badge-danger cart-count"></span></a> -->
                 </li>
             </ul>
             <ul class="navbar-nav">
@@ -28,7 +29,7 @@ if(! isset($page_name)){
                         <a class="nav-link"><?= $_SESSION['loginUser']['nickname'] ?></a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="member.php">會員中心</a>
+                        <a class="nav-link" href="order_detail.php">訂單記錄</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="">修改會員資料</a>
