@@ -29,16 +29,16 @@ $page_name = 'customize';
                                     <select name="flower_type" id="flower_type" class="form-control" onchange="myadd()">
 
                                     <option value="0">--商品種類--</option>
-                                    <option value="120">玫瑰</option>
-                                    <option value="130">鬱金香</option>
-                                    <option value="150">康乃馨</option>
+                                    <option value="120">玫瑰--120</option>
+                                    <option value="130">鬱金香--130</option>
+                                    <option value="150">康乃馨--150</option>
                                     </select><br>
 
                                     <lable class="form-label">選擇顏色</lable>
-                                    <input type="hidden" name="flo_color_name" id="flo_color_name">
+                                    <input type="hidden" name="flow_color_name" id="flow_color_name">
                                     <select name="flo_color" id="flo_color" class="form-control" onchange="myadd()">
                                     <option value="0">--商品顏色--</option>
-                                    <option value="0">白色</option>
+                                    <option value="0">白色--</option>
                                     <option value="20">紅色</option>
                                     <option value="50">紫色</option>
                                     </select><br>
@@ -54,6 +54,7 @@ $page_name = 'customize';
                                     </select><br>
 
                                     <lable class="form-label">包裝紙花紋</lable>
+                                    <input type="hidden" name="papper_pattern_name" id="papper_pattern_name">
                                     <select name="papper_pattern" id="papper_pattern" class="form-control" onchange="myadd()">
                                     <option value="0">--紙張種類--</option>
                                     <option value="0">無</option>
@@ -62,6 +63,7 @@ $page_name = 'customize';
                                     </select><br>
 
                                     <lable class="form-label">緞帶</lable>
+                                    <input type="hidden" name="ribbon_name" id="ribbon_name">
                                     <select name="ribbon" id="ribbon" class="form-control" onchange="myadd()">
                                     <option value="0">--綁帶種類--</option>
                                     <option value="0">麻繩</option>
@@ -70,6 +72,7 @@ $page_name = 'customize';
                                     </select><br>
                                     
                                     <lable class="form-label">卡片</lable>
+                                    <input type="hidden" name="card_name" id="card_name">
                                     <select name="card" id="card" class="form-control" onchange="myadd()">
                                     <option value="0">--卡片種類--</option>
                                     <option value="0">牛皮紙卡</option>
@@ -126,12 +129,27 @@ $page_name = 'customize';
             var flo_name = document.getElementById('flower_type');
             document.getElementById('flo_name').value=flo_name.options[flo_name.selectedIndex].text;
 
-            var flo_color_name = document.getElementById('flower_color');
-            document.getElementById('flo_color_name').value=flo_name.options[flo_name.selectedIndex].text;
+
+            var flow_color_name = document.getElementById('flo_color');
+            document.getElementById('flow_color_name').value=flow_color_name.options[flow_color_name.selectedIndex].text;
 
             var papper_color_name = document.getElementById('papper_color');
-            document.getElementById('papper_color_name').value=flo_name.options[flo_name.selectedIndex].text;
+            document.getElementById('papper_color_name').value=papper_color_name.options[papper_color_name.selectedIndex].text;
 
+
+            var papper_pattern_name = document.getElementById('papper_pattern');
+            document.getElementById('papper_pattern_name').value=papper_pattern_name.options[papper_pattern_name.selectedIndex].text;
+
+            var ribbon_name = document.getElementById('ribbon');
+            document.getElementById('ribbon_name').value=ribbon_name.options[ribbon_name.selectedIndex].text;
+
+
+            var card_name = document.getElementById('card');
+            document.getElementById('card_name').value=card_name.options[card_name.selectedIndex].text;
+
+
+          
+            
             
           
 

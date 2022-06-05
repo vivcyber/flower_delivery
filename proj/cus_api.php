@@ -13,7 +13,7 @@ $output = [
     {
         $flo_name = $_POST['flo_name'];
         $flower_type = $_POST['flower_type'];
-        $flo_color_name = $_POST['flo_color_name'];
+        $flow_color_name = $_POST['flow_color_name'];
         $flo_color = $_POST['flo_color'];
         $papper_color_name = $_POST['papper_color_name'];
         $papper_color = $_POST['papper_color'];
@@ -21,6 +21,7 @@ $output = [
         $papper_pattern = $_POST['papper_pattern'];
         $ribbon_name = $_POST['ribbon_name'];
         $ribbon = $_POST['ribbon'];
+        $card_name = $_POST['card_name'];
         $card = $_POST['card'];
         // $total = $_POST['total'];
         
@@ -31,7 +32,7 @@ $output = [
 
         $con = mysqli_connect("localhost","root","","flowers");
 
-        $query="INSERT INTO `custom_detail`(`flo_name`,`flower_type`,`flow_color_name`, `flo_color`,`papper_color_name`, `papper_color`,`papper_pattern_name`, `papper_pattern`,`ribbon_name`, `ribbon`, `card`, `total`) VALUES ('$flo_name','$flower_type','$flow_color_name',' $flo_color','$papper_color_name',' $papper_color','$papper_pattern_name','$papper_pattern','$ribbon_name','$ribbon','$card',' $total')";
+        $query="INSERT INTO `custom_detail`(`flo_name`, `flower_type`, `flow_color_name`, `flo_color`, `papper_color_name`, `papper_color`, `papper_pattern_name`, `papper_pattern`, `ribbon_name`, `ribbon`, `card_name`, `card`, `total`) VALUES ('$flo_name','$flower_type','$flow_color_name','$flo_color','$papper_color_name','$papper_color','$papper_pattern_name','$papper_pattern','$ribbon_name','$ribbon','$card_name','$card','$total')";
 
         // $query="INSERT INTO `camproduct2`(`productname`, `productcategory`, `productcolor`, `productinfo`, `productimg`, `productprice`, `productleft`, `productspec`, `productinclude`, `productimg2`, `productimg3`) VALUES ('$productname',' $productcategory','$productcolor','$productinfo','$productimg','$productprice','  $productleft',' $productspec',' $productinclude','$productimg2','$productimg3')";
 
@@ -48,6 +49,7 @@ $output = [
             header('Location:index_.php');
 
             // echo "添加成功";
+            // echo $query;
         
         }
         else {       
