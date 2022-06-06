@@ -38,9 +38,9 @@ $page_name = 'customize';
                                     <input type="hidden" name="flow_color_name" id="flow_color_name">
                                     <select name="flo_color" id="flo_color" class="form-control" onchange="myadd()">
                                     <option value="0">--商品顏色--</option>
-                                    <option value="0">白色--</option>
-                                    <option value="20">紅色</option>
-                                    <option value="50">紫色</option>
+                                    <option value="0">白色--無需加價</option>
+                                    <option value="20">紅色--20</option>
+                                    <option value="50">紫色--50</option>
                                     </select><br>
 
 
@@ -48,40 +48,40 @@ $page_name = 'customize';
                                     <input type="hidden" name="papper_color_name" id="papper_color_name">
                                     <select name="papper_color" id="papper_color" class="form-control"onchange="myadd()">
                                     <option value="0">--紙張種類--</option>
-                                    <option value="30">牛皮紙</option>
-                                    <option value="20">白報紙</option>
-                                    <option value="50">花紋包裝紙</option>
+                                    <option value="30">牛皮紙--30</option>
+                                    <option value="20">白報紙--20</option>
+                                    <option value="50">花紋包裝紙--50</option>
                                     </select><br>
 
                                     <lable class="form-label">包裝紙花紋</lable>
                                     <input type="hidden" name="papper_pattern_name" id="papper_pattern_name">
                                     <select name="papper_pattern" id="papper_pattern" class="form-control" onchange="myadd()">
                                     <option value="0">--紙張種類--</option>
-                                    <option value="0">無</option>
-                                    <option value="20">英文報紙</option>
-                                    <option value="50">燙金點點</option>
+                                    <option value="0">無花紋</option>
+                                    <option value="20">英文報紙--20</option>
+                                    <option value="50">燙金點點--50</option>
                                     </select><br>
 
                                     <lable class="form-label">緞帶</lable>
                                     <input type="hidden" name="ribbon_name" id="ribbon_name">
                                     <select name="ribbon" id="ribbon" class="form-control" onchange="myadd()">
                                     <option value="0">--綁帶種類--</option>
-                                    <option value="0">麻繩</option>
-                                    <option value="20">紅色亮面緞帶</option>
-                                    <option value="30">黑色絨布緞帶</option>
+                                    <option value="0">麻繩--無需加價</option>
+                                    <option value="20">紅色亮面緞帶--20</option>
+                                    <option value="30">黑色絨布緞帶--30</option>
                                     </select><br>
                                     
                                     <lable class="form-label">卡片</lable>
                                     <input type="hidden" name="card_name" id="card_name">
                                     <select name="card" id="card" class="form-control" onchange="myadd()">
                                     <option value="0">--卡片種類--</option>
-                                    <option value="0">牛皮紙卡</option>
-                                    <option value="20">花紋邊框</option>
-                                    <option value="50">黑色燙金</option>
+                                    <option value="0">牛皮紙卡--無需加價</option>
+                                    <option value="20">花紋邊框--20</option>
+                                    <option value="50">黑色燙金--50</option>
                                     </select><br>
 
                                     <!-- <lable class="form-label" id="total" name="total">總計</lable> -->
-                                    <p id="total" name="total"></p>
+                                    <h5>total <span class="fs-2 fw-light text-danger" id="total" name="total"></span></h5>
                                     
 
 
